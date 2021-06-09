@@ -3,10 +3,10 @@ class Snow {
         var options = {
             restitution:0.4
         }
-        this.width = width;
-        this.height = height;
+        this.width = 50;
+        this.height = 50;
         this.image= loadImage("snow4.webp");
-        this.body = Bodies.rectangle(x, y, width, height, options);
+        this.body = Bodies.rectangle(x, y, 50, 50, options);
         World.add(world,this.body);
     }
     display(){
@@ -17,7 +17,7 @@ class Snow {
             translate(pos.x, pos.y);
             rotate(angle);
             imageMode(CENTER);
-            image(this.image, 0, 0, this.width, this.height);
+            image(this.image, 0, 0, 50,50);
             pop();
     }
         
