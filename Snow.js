@@ -5,7 +5,7 @@ class Snow {
         }
         this.width = width;
         this.height = height;
-        this.image= loadImage("SNOW2.png");
+        this.image= loadImage("snow4.webp");
         this.body = Bodies.rectangle(x, y, width, height, options);
         World.add(world,this.body);
     }
